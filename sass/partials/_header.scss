@@ -1,0 +1,27 @@
+.container{
+  padding:0 20px;
+}
+.header{ 
+  background-color: $accent;
+    &_inner{
+      min-height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: url(/img/Z-avatar_1.jpg) center no-repeat;
+        background-size: cover;
+      }
+  }  
+} 
+.menu_btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #fff;
+  border:none;
+  position: relative;
+}

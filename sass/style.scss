@@ -1,0 +1,17 @@
+@import 'partials/colors';
+@import 'partials/vars';
+@import 'partials/font';
+@import './partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  min-width: 320px;
+  overflow-x: hidden;
+}
