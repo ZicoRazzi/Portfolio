@@ -25,9 +25,11 @@
 .header{ 
   position: relative;
   color: #fff;
+  overflow: hidden;
+  max-height: 300px;
   &_bg_video{
     width: 100%;
-    height: 80vh;
+    // height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
     position: absolute;
@@ -40,6 +42,13 @@
   &_content{
     text-align: center;
     font-size: 10px;
+    margin-top: 20px;
+    .header_title{
+      font-size: 16px;
+    }
+    .title_span{
+      font-size: 8px;
+    }
   }
     &_inner{
       min-height: 80px;
@@ -49,18 +58,29 @@
       z-index: 2;
       
       .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: url(/img/Z-avatar_1.jpg) center no-repeat;
-        background-size: cover;
+        font-weight: $heavy;
+        font-size: 20px;
         z-index: 3;
+      }
+      .logo_link:hover{
+        color: rgb(161, 175, 179);
       }
   }  
 } 
 @media (min-width: 480px) {
   .header{
-    // padding: 0px 20px 0px 20px;
+    min-height: 250px;
+    .logo{
+      
+      font-size: 24px;
+      margin-top: 8px;
+    } 
     &_inner{
       min-height: 100px;
       .logo{
@@ -76,85 +96,123 @@
 }
 @media (min-width: 1024px) {
   .header{
-    
+    min-height: 500px;
+    .logo{
+      
+      font-size: 30px;
+      
+    } 
     &_content{
-      font-size: 20px;
-      margin-top: 60px;
+      padding: 0px 30px;
+      margin-top: 80px;
+      .header_title{
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+      .title_span{
+        font-size: 14px;
+      }
     }
   }
 }
-.menu_btn{
-  width: 40px;
-  height: 40px;
-  border-radius: 3px;
-  background-color: transparent;
-  border:none;
-  position: relative;
-  cursor: pointer;
-  &::after{
-    content: "";
-    width: 12px;
-    height: 2px;
-    border-radius: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 15px;
-    left: 14px;
-    box-shadow: 0 4px 0 0 #fff, 0 8px 0 0 #fff;
-
-  }
-}
-
-@media (min-width: 480px) {
-  // .menu_list{
-  //   display: none;
-  // }
-  .menu_btn{
-    width: 70px;
-    height: 70px;
-    &::after{
-      width: 22px;
-      height: 4px;
-      border-radius: 1.5px;
-      top: 25px;
-      left: 24px;
-      box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
-
-    }
-  }
-}
-
-.menu_list{
+.menu_body{
   display: none;
-  li{
-    list-style-type: none;
-  }
-  .menu_link{
-    text-decoration: none;
-    color: #fff;
-  }
 }
-.menu_list {
-  position: fixed;
-  top: -100%;
-  left: 0;
+.menu_icon{
+  z-index: 5;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+}
+.menu_icon span,
+.menu_icon::after,
+.menu_icon::before {
+  left:0;
+  position: absolute;
+  height: 10%;
   width: 100%;
-  height: 100vh;
-  overflow: auto;
-  text-align: center;
-  margin-top: 10px;
   transition: all 0.3s ease 0s;
   background-color: #fff;
-  padding: 10px;
 }
-.menu_list.active {
-  top: 0px;
+.menu_icon::before,
+.menu_icon::after{
+  content: "";
+ 
 }
-// .menu_list {
-//   display: block;
-//   position: relative;
-//   width: 30px;
-//   height: 20px;
-//   z-index: 3;
-//   margin-right: 40px;
+.menu_icon::after{
+  bottom: 0;
+}
+.menu_icon::before{
+  top: 0;
+}
+.menu_icon span{
+  top: 45%;
+  transform: scale(1) translate(0px, -50%); 
+}
+.menu_icon._active span {
+  transform: scale(0) translate(0px, -50%);
+}
+.menu_icon._active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+.menu_icon._active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+}
+// .menu_body{
+//   position: fixed;
+//   top: 0;
+//   left: -100%;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.9);
+//   padding: 100px 30px 30px 30px;
+//   transition: left 0.3s ease 0s;
+//   overflow: auto;
+ 
 // }
+// .menu_body._active{
+//   display:block;
+//   left: 0;
+//   li{
+//     margin-bottom: 20px;
+//   }
+// }
+// .menu_body::before {
+//   content: "";
+//   position: fixed;
+//   width: 100%;
+//   top:0;
+//   left:0;
+//   height: 70px;
+//   z-index: 3;
+// }
+@media (min-width: 768px) {
+  .menu_icon{
+    display: none;
+  }
+  .menu_body{
+    display: block;
+  li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: $heavy;
+  }
+      .menu_link{
+        color: #fff;
+        font-size: 18px;
+      }
+      .menu_link:hover{
+        color: rgb(161, 175, 179);
+      }
+    }
+  }
+  
+
+
+
+
