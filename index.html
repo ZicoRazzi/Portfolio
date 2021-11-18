@@ -38,23 +38,18 @@
                 <ul class="menu_list">
                   <li>
                     <a data-goto=".section_about" href="#" class="menu_link"
-                      >About</a
-                    >
+                      >About</a>
                   </li>
                   <li>
                     <a data-goto=".section_projects" href="#" class="menu_link"
-                      >Projects</a
-                    >
+                      >Projects</a>
                   </li>
                   <li>
                     <a data-goto=".section_inspiration" href="#" class="menu_link"
-                      >Inspiration</a
-                    >
+                      >Inspiration</a>
                   </li>
                   <li>
-                    <a data-goto=".footer" href="#" class="menu_link"
-                      >Contact Me</a
-                    >
+                  <a data-goto="#" href="#popup" class="menu_link">Contact Me</a>
                   </li>
                 </ul>
               </nav>
@@ -85,7 +80,8 @@
                   <p>A family person and father of three stubborn boys. </p>
 
                   <p>Interested in the entire web development spectrum and working on ambitious projects with positive people.  
-                </p>
+                </p><br>
+                <a href="#popup" class="about_popup">Let’s make something special.</a>
               </div>
               <br />
               <h3>My scills</h3>
@@ -150,6 +146,22 @@
           </ul>
         </div>
       </footer>
+
+      <div id="popup" class="pop_up contact_form">
+        <a href="##" class="pop_up_area"></a>
+        <div class="pop_up_body">
+          <div class="pop_up_content">
+            <a href="##" class="pop_up_close">x</a>
+            <form action="">
+              <input class="pop_up_input pop_up_input_1" type="text" placeholder="name" onfocus="this.placeholder=''" onblur="this.placeholder='name'">
+              <input class="pop_up_input pop_up_input_2" type="text" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'">
+              <input class="pop_up_input pop_up_input_3" type="text" placeholder="subject" onfocus="this.placeholder=''" onblur="this.placeholder='subject'">
+              <textarea class="pop_up_input pop_up_input_4" placeholder="message" onfocus="this.placeholder=''" onblur="this.placeholder='message'"></textarea>
+              <button class="pop_up_btn">send message!</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/main.js"></script>
