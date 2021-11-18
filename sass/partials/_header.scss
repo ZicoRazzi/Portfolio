@@ -19,9 +19,8 @@
   &_content {
     text-align: center;
     font-size: 10px;
-    margin-top: 20px;
+    margin-top: 100px;
     .header_title {
-      
       font-size: 16px;
     }
     .title_span {
@@ -35,27 +34,31 @@
     align-items: center;
     padding: 0 20px;
     z-index: 2;
+    position: fixed;
     // background-color: rgba(255, 255, 255, 0.2);
 
     .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
       width: 40px;
       height: 40px;
-      border-radius: 50%;
+      // border-radius: 50%;
       font-weight: $heavy;
+      margin-top: 18px;
+      margin-left: 14px;
       font-size: 20px;
-      z-index: 3;
+      z-index: 999;
       cursor: pointer;
-      z-index: 4;
+     
+    
     }
-    .logo_link{
+    .logo_link {
       cursor: pointer;
+      z-index: 99;
     }
     .logo_link:hover {
       color: #fff;
-     
     }
   }
 }
@@ -73,7 +76,7 @@
   height: 16px;
   cursor: pointer;
   position: fixed;
-  top: 30px;
+  top: 32px;
   right: 30px;
 }
 .menu_icon span,
@@ -86,13 +89,13 @@
   transition: all 0.3s ease 0s;
   background-color: $icon;
 }
-.menu_icon span:hover{
+.menu_icon span:hover {
   background-color: #fff;
 }
 
 .menu_icon::before,
 .menu_icon::after {
-  content: '';
+  content: "";
 }
 .menu_icon::after {
   bottom: 0;
@@ -136,7 +139,7 @@
   }
 }
 .menu_body::before {
-  content: '';
+  content: "";
   position: fixed;
   width: 100%;
   top: 0;
@@ -155,15 +158,24 @@
     &_inner {
       min-height: 100px;
       padding: 0 30px;
+     
       .logo {
         width: 60px;
         height: 60px;
+        margin-top: 38px;
+        margin-left: 14px;
+
       }
     }
     &_content {
-      font-size: 14px;
-      padding: 0px 10px 0px 10px;
+      font-size: 16px;
+      padding: 0px 10px;
+      margin-top: 120px;
     }
+  }
+  .menu_icon {
+    top: 47px;
+    right: 40px;
   }
 }
 @media (min-width: 768px) {
@@ -171,13 +183,17 @@
     &_inner {
       padding: 0 40px;
     }
+    &_content {
+      font-size: 20px;
+      margin-top: 140px;
+    }
   }
   .menu_icon {
     display: block;
     position: fixed;
     height: 18px;
-    top: 40px;
-    right: 30px;
+    top: 46px;
+    right: 50px;
   }
   .menu_body {
     display: block;
@@ -217,6 +233,8 @@
       position: fixed;
       .logo {
         font-size: 30px;
+        margin-top: 34px;
+        
       }
     }
   }
