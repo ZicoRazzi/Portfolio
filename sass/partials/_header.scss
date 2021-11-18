@@ -76,7 +76,7 @@
   height: 10%;
   width: 100%;
   transition: all 0.3s ease 0s;
-  background-color: $hover;
+  background-color: orange;
 }
 .menu_icon::before,
 .menu_icon::after {
@@ -114,6 +114,7 @@
   padding: 100px 30px 30px 30px;
   transition: left 0.3s ease 0s;
   overflow: auto;
+  z-index: 3;
 }
 .menu_body._active {
   display: block;
@@ -175,7 +176,7 @@
       font-weight: $heavy;
     }
     .menu_link {
-      color: $hover;
+      color: orange;
       font-size: 20px;
     }
     .menu_link:hover {
@@ -206,8 +207,9 @@
         font-size: 30px;
       }
     }
-    // &_inner.out {
-    //   transform: translateY(-100%);
-    // }
+  }
+  .menu_icon {
+    height: 20px;
+    right: 70px;
   }
 }

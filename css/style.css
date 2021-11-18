@@ -93,7 +93,7 @@
   width: 100%;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background-color: #492b21;
+  background-color: orange;
 }
 
 .menu_icon::before,
@@ -143,6 +143,7 @@
   -webkit-transition: left 0.3s ease 0s;
   transition: left 0.3s ease 0s;
   overflow: auto;
+  z-index: 3;
 }
 
 .menu_body._active {
@@ -207,7 +208,7 @@
     font-weight: bold;
   }
   .menu_body .menu_link {
-    color: #492b21;
+    color: orange;
     font-size: 20px;
   }
   .menu_body .menu_link:hover {
@@ -238,6 +239,10 @@
   }
   .header_inner .logo {
     font-size: 30px;
+  }
+  .menu_icon {
+    height: 20px;
+    right: 70px;
   }
 }
 
