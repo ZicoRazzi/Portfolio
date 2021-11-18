@@ -21,7 +21,7 @@
 }
 .fab:hover{
   color:$icon;
-  
+  font-size: 20px;
 }
 
 .fab {
@@ -29,6 +29,7 @@
 }
 .fab:hover {
   transform: rotate(360deg);
+  
 }
 // .social_link {
 //   display: inline-block;
