@@ -1,0 +1,29 @@
+.footer_social{
+  min-height: 80px;
+  background-color: $hover;
+  .social{
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.social_list{
+  display: inline-block;
+  margin-left: 10px;
+  
+}
+.fab{
+  color:#fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+.fab:hover{
+  color:orange;
+  
+}
+@media (min-width: 768px) {
+  .social_list{
+    margin-left: 20px;
+}
+}

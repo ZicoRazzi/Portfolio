@@ -15,11 +15,11 @@ body{
   min-width: 320px;
   overflow-x: hidden;
   font-family:$orbi;
-  
 }
 a{
   text-decoration: none;
-  color: #fff;
+  color: $hover;
+  
 }
 ul, ol, li{
   list-style: none;
