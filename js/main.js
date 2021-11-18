@@ -42,16 +42,8 @@ if (menuLinks.length > 0) {
   }
 }
 
-var header = querySelector('.header_inner');
-scrollPrev = 0;
 
-document.querySelector(window).scroll(function () {
-  var scrolled = document.querySelector(window).scrollTop;
+      
+  
 
-  if (scrolled > 100 && scrolled > scrollPrev) {
-    header.classList.add('out');
-  } else {
-    header.removeClass('out');
-  }
-  scrollPrev = scrolled;
-});
+

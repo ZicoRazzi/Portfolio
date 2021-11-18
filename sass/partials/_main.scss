@@ -1,31 +1,19 @@
 .main {
   padding: 20px;
-  // border:2px solid #000;
   margin-top: 100px;
   color: $main-txt;
 }
-
-// @media (min-width: 481px) and (max-width: 767px){
-
-// }
-// @media (min-width: 768px) and (max-width: 1024px) {
-
-// }
-// @media (min-width: 1024px) {
-
-// }
 .section {
   min-height: 300px;
   display: flex;
   align-items: stretch;
-  // border: 20px solid rgb(27, 233, 8);
   flex-direction: column;
 }
+// About
 .section_about {
   display: flex;
   flex-direction: column;
 }
-
 .block_image {
   height: 40%;
   width: 100%;
@@ -127,6 +115,9 @@
 .scills_8 {
   width: 40%;
 }
+
+// Projects
+
 .section_projects {
   display: flex;
   flex-flow: row wrap;
@@ -139,7 +130,6 @@
     min-height: 150px;
     border-radius: 5px;
     border: 1px solid $br-accent;
-    // background-color: $bl-accent;
     background-image: radial-gradient(
       circle farthest-corner at 10% 20%,
       rgba(221, 221, 221, 1) 0.1%,
@@ -233,7 +223,6 @@
     .project_box {
       flex: 1 0 25%;
       margin-bottom: 50px;
-      // margin-left: 50px
     }
   }
 }

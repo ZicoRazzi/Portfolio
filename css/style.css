@@ -63,6 +63,12 @@
   font-weight: bold;
   font-size: 20px;
   z-index: 3;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.header_inner .logo_link {
+  cursor: pointer;
 }
 
 .header_inner .logo_link:hover {
@@ -94,7 +100,11 @@
   width: 100%;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background-color: orange;
+  background-color: #ffa500;
+}
+
+.menu_icon span:hover {
+  background-color: #fff;
 }
 
 .menu_icon::before,
@@ -209,7 +219,7 @@
     font-weight: bold;
   }
   .menu_body .menu_link {
-    color: orange;
+    color: #ffa500;
     font-size: 20px;
   }
   .menu_body .menu_link:hover {
@@ -589,10 +599,23 @@
   color: #fff;
   cursor: pointer;
   font-size: 18px;
+  display: inline-block;
 }
 
 .fab:hover {
-  color: orange;
+  color: #ffa500;
+}
+
+.fab {
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+}
+
+.fab:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @media (min-width: 768px) {
@@ -616,7 +639,8 @@ body {
 
 a {
   text-decoration: none;
-  color: orange;
+  color: #ffa500;
+  cursor: pointer;
 }
 
 ul, ol, li {

@@ -47,9 +47,15 @@
       font-weight: $heavy;
       font-size: 20px;
       z-index: 3;
+      cursor: pointer;
+      z-index: 4;
+    }
+    .logo_link{
+      cursor: pointer;
     }
     .logo_link:hover {
       color: #fff;
+     
     }
   }
 }
@@ -78,8 +84,12 @@
   height: 10%;
   width: 100%;
   transition: all 0.3s ease 0s;
-  background-color: orange;
+  background-color: $icon;
 }
+.menu_icon span:hover{
+  background-color: #fff;
+}
+
 .menu_icon::before,
 .menu_icon::after {
   content: '';
@@ -178,7 +188,7 @@
       font-weight: $heavy;
     }
     .menu_link {
-      color: orange;
+      color: $icon;
       font-size: 20px;
     }
     .menu_link:hover {
