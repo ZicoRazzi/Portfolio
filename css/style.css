@@ -451,7 +451,7 @@ textarea:focus {
   font-size: 12px;
 }
 
-.scills_box {
+.skills_box {
   margin-top: 20px;
   padding: 20px;
   width: 100%;
@@ -460,78 +460,79 @@ textarea:focus {
   border: 1px solid #281f21;
 }
 
-.scills_box .scills {
+.skills_box .skills {
   width: 100%;
   min-height: 24px;
   border-radius: 2%;
-  border: 1px solid #281f21;
   margin: 10px 0px;
   position: relative;
 }
 
-.scills_box .scills_1,
-.scills_box .scills_2,
-.scills_box .scills_3,
-.scills_box .scills_4,
-.scills_box .scills_5,
-.scills_box .scills_6,
-.scills_box .scills_7,
-.scills_box .scills_8 {
+.skills_box .skills_1,
+.skills_box .skills_2,
+.skills_box .skills_3,
+.skills_box .skills_4,
+.skills_box .skills_5,
+.skills_box .skills_6,
+.skills_box .skills_7,
+.skills_box .skills_8 {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #a2aeb9;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   min-height: 10%;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.scills_box .scills_1 .scills_span,
-.scills_box .scills_2 .scills_span,
-.scills_box .scills_3 .scills_span,
-.scills_box .scills_4 .scills_span,
-.scills_box .scills_5 .scills_span,
-.scills_box .scills_6 .scills_span,
-.scills_box .scills_7 .scills_span,
-.scills_box .scills_8 .scills_span {
+.skills_box .skills_1 .skills_span,
+.skills_box .skills_2 .skills_span,
+.skills_box .skills_3 .skills_span,
+.skills_box .skills_4 .skills_span,
+.skills_box .skills_5 .skills_span,
+.skills_box .skills_6 .skills_span,
+.skills_box .skills_7 .skills_span,
+.skills_box .skills_8 .skills_span {
   position: absolute;
   top: 2px;
   left: 3px;
   font-size: 12px;
 }
 
-.scills_1 {
+.skills_1 {
   width: 80%;
 }
 
-.scills_2 {
+.skills_2 {
   width: 70%;
 }
 
-.scills_3 {
+.skills_3 {
   width: 60%;
 }
 
-.scills_4 {
+.skills_4 {
   width: 50%;
 }
 
-.scills_5 {
+.skills_5 {
   width: 20%;
 }
 
-.scills_6 {
+.skills_6 {
   width: 20%;
 }
 
-.scills_7 {
+.skills_7 {
   width: 50%;
 }
 
-.scills_8 {
+.skills_8 {
   width: 40%;
 }
 
@@ -607,16 +608,16 @@ textarea:focus {
 }
 
 @media (min-width: 768px) {
-  .scills .scills_1 .scills_span,
-  .scills .scills_2 .scills_span,
-  .scills .scills_3 .scills_span,
-  .scills .scills_4 .scills_span,
-  .scills .scills_5 .scills_span,
-  .scills .scills_6 .scills_span,
-  .scills .scills_7 .scills_span,
-  .scills .scills_8 .scills_span {
+  .skills .skills_1 .skills_span,
+  .skills .skills_2 .skills_span,
+  .skills .skills_3 .skills_span,
+  .skills .skills_4 .skills_span,
+  .skills .skills_5 .skills_span,
+  .skills .skills_6 .skills_span,
+  .skills .skills_7 .skills_span,
+  .skills .skills_8 .skills_span {
     left: 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .section_projects .project_box {
     -webkit-box-flex: 1;
