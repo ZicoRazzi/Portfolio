@@ -210,7 +210,7 @@
     .skills_8 {
       .skills_span {
         left: 5px;
-        font-size: $f-14;
+        font-size: $f-16;
       }
     }
   }
@@ -219,6 +219,15 @@
       flex: 1 0 33%;
       margin-bottom: 50px;
       margin-left: 20px;
+    }
+    .project_box:nth-of-type(1){
+      margin-left: 0;
+    }
+    .project_box:nth-of-type(4){
+      margin-left: 0;
+    }
+    .project_box:nth-of-type(7){
+      margin-left: 0;
     }
   }
   .section_inspiration{
@@ -241,6 +250,7 @@
   }
   .about {
     padding: 30px 20px;
+    margin-right: 30px;
     &_story {
       p {
         font-size: $f-16;
@@ -248,12 +258,14 @@
     }
   }
   .section_projects {
-    padding: 20px;
+    padding: 0 50px;
     .project_box {
       flex: 1 0 25%;
       margin-bottom: 50px;
     }
   }
-  
+  .section_inspiration{
+    padding: 0px 16px;
+  }
 }
 

@@ -250,8 +250,8 @@ textarea:focus {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 100px 30px 30px 30px;
-  -webkit-transition: left 0.3s ease 0s;
-  transition: left 0.3s ease 0s;
+  -webkit-transition: left 0.5s ease 0s;
+  transition: left 0.5s ease 0s;
   overflow: auto;
   z-index: 3;
 }
@@ -262,7 +262,7 @@ textarea:focus {
 }
 
 .menu_body._active li {
-  margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 .menu_body::before {
@@ -342,15 +342,15 @@ textarea:focus {
     min-height: 100vh;
   }
   .header_content {
-    padding: 0px 30px;
-    margin-top: 260px;
+    padding: 0px 50px;
+    margin-top: 320px;
   }
   .header_content .header_title {
-    font-size: 30px;
+    font-size: 38px;
     letter-spacing: 2px;
   }
   .header_content .title_span {
-    font-size: 14px;
+    font-size: 16px;
   }
   .header_inner {
     width: 100%;
@@ -361,6 +361,7 @@ textarea:focus {
   .header_inner .logo {
     font-size: 30px;
     margin-top: 34px;
+    margin-left: 0px;
   }
   .menu_icon {
     height: 20px;
@@ -654,7 +655,7 @@ textarea:focus {
   .skills .skills_7 .skills_span,
   .skills .skills_8 .skills_span {
     left: 5px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .section_projects .project_box {
     -webkit-box-flex: 1;
@@ -662,6 +663,15 @@ textarea:focus {
             flex: 1 0 33%;
     margin-bottom: 50px;
     margin-left: 20px;
+  }
+  .section_projects .project_box:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .section_projects .project_box:nth-of-type(4) {
+    margin-left: 0;
+  }
+  .section_projects .project_box:nth-of-type(7) {
+    margin-left: 0;
   }
   .section_inspiration .inspiration_title {
     font-size: 16px;
@@ -687,18 +697,22 @@ textarea:focus {
   }
   .about {
     padding: 30px 20px;
+    margin-right: 30px;
   }
   .about_story p {
     font-size: 16px;
   }
   .section_projects {
-    padding: 20px;
+    padding: 0 50px;
   }
   .section_projects .project_box {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 25%;
             flex: 1 0 25%;
     margin-bottom: 50px;
+  }
+  .section_inspiration {
+    padding: 0px 16px;
   }
 }
 
