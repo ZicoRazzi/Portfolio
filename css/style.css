@@ -131,7 +131,20 @@ textarea:focus {
 }
 
 .header_content .header_title {
+  position: relative;
   font-size: 16px;
+}
+
+.header_content .header_title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.7);
 }
 
 .header_content .title_span {
@@ -171,7 +184,7 @@ textarea:focus {
 }
 
 .header_inner .logo_link:hover {
-  color: #fff;
+  color: #492b21;
 }
 
 .menu_body {
@@ -366,6 +379,7 @@ textarea:focus {
   .menu_icon {
     height: 20px;
     right: 70px;
+    top: 44px;
   }
 }
 
@@ -537,7 +551,12 @@ textarea:focus {
   width: 40%;
 }
 
-.section_projects {
+.section_projects h3 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.section_projects_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,10 +564,10 @@ textarea:focus {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
-.section_projects .project_box {
+.section_projects_box .project_box {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 90%;
           flex: 1 0 90%;
@@ -608,7 +627,12 @@ textarea:focus {
   top: 2px;
 }
 
-.section_inspiration {
+.section_inspiration h3 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.section_inspiration_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,11 +642,11 @@ textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.section_inspiration .inspiration_room {
+.section_inspiration_box .inspiration_room {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,11 +664,6 @@ textarea:focus {
           box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
 }
 
-.section_inspiration .inspiration_title {
-  font-size: 12px;
-  color: orange;
-}
-
 @media (min-width: 768px) {
   .skills .skills_1 .skills_span,
   .skills .skills_2 .skills_span,
@@ -657,23 +676,23 @@ textarea:focus {
     left: 5px;
     font-size: 16px;
   }
-  .section_projects .project_box {
+  .section_projects_box .project_box {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 33%;
             flex: 1 0 33%;
     margin-bottom: 50px;
     margin-left: 20px;
   }
-  .section_projects .project_box:nth-of-type(1) {
+  .section_projects_box .project_box:nth-of-type(1) {
     margin-left: 0;
   }
-  .section_projects .project_box:nth-of-type(4) {
+  .section_projects_box .project_box:nth-of-type(4) {
     margin-left: 0;
   }
-  .section_projects .project_box:nth-of-type(7) {
+  .section_projects_box .project_box:nth-of-type(7) {
     margin-left: 0;
   }
-  .section_inspiration .inspiration_title {
+  .section_inspiration_box .inspiration_title {
     font-size: 16px;
   }
 }
@@ -711,7 +730,7 @@ textarea:focus {
             flex: 1 0 25%;
     margin-bottom: 50px;
   }
-  .section_inspiration {
+  .section_inspiration_box {
     padding: 0px 16px;
   }
 }

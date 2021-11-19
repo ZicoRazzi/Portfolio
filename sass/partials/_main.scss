@@ -118,11 +118,18 @@
 }
 
 // Projects
-
-.section_projects {
+.section_projects{
+  h3{
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+.section_projects_box {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 100px;
+  margin-top: 50px;
+  
+
   .project_box {
     flex: 1 0 90%;
     display: flex;
@@ -174,13 +181,19 @@
 }
 
 //Inspiration
-
-.section_inspiration {
+.section_inspiration{
+  h3{
+  text-align: center;
+  margin-top: 60px;
+}
+}
+.section_inspiration_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
+  
   .inspiration_room {
     display: flex;
     justify-content: center;
@@ -192,10 +205,7 @@
     box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
     
   }
-  .inspiration_title{
-    font-size: $f-12;
-    color: orange;
-  }
+ 
 }
 
 @media (min-width: 768px) {
@@ -214,7 +224,7 @@
       }
     }
   }
-  .section_projects {
+  .section_projects_box {
     .project_box {
       flex: 1 0 33%;
       margin-bottom: 50px;
@@ -230,7 +240,7 @@
       margin-left: 0;
     }
   }
-  .section_inspiration{
+  .section_inspiration_box{
     .inspiration_title{
       font-size: $f-16;
     }
@@ -264,7 +274,7 @@
       margin-bottom: 50px;
     }
   }
-  .section_inspiration{
+  .section_inspiration_box{
     padding: 0px 16px;
   }
 }
