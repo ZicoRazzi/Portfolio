@@ -46,7 +46,7 @@
     line-height: 1.4;
     letter-spacing: 1.2px;
     p {
-      font-size: 12px;
+      font-size: $f-12;
     }
   }
 }
@@ -61,7 +61,6 @@
     width: 100%;
     min-height: 24px;
     border-radius: 2%;
-    // border: 1px solid $br-accent;
     margin: 10px 0px;
     position: relative;
   }
@@ -89,7 +88,7 @@
       position: absolute;
       top: 2px;
       left: 3px;
-      font-size: 12px;
+      font-size: $f-12;
     }
   }
 }
@@ -138,7 +137,6 @@
     );
     margin-bottom: 20px;
     cursor: progress;
-    // background: transparent;
     transition: all 0.5s ease;
     position: relative;
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
@@ -175,6 +173,31 @@
   top: 2px;
 }
 
+//Inspiration
+
+.section_inspiration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  .inspiration_room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    min-height: 600px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+    
+  }
+  .inspiration_title{
+    font-size: $f-12;
+    color: orange;
+  }
+}
+
 @media (min-width: 768px) {
   .skills {
     .skills_1,
@@ -187,7 +210,7 @@
     .skills_8 {
       .skills_span {
         left: 5px;
-        font-size: 14px;
+        font-size: $f-14;
       }
     }
   }
@@ -196,6 +219,11 @@
       flex: 1 0 33%;
       margin-bottom: 50px;
       margin-left: 20px;
+    }
+  }
+  .section_inspiration{
+    .inspiration_title{
+      font-size: $f-16;
     }
   }
 }
@@ -215,7 +243,7 @@
     padding: 30px 20px;
     &_story {
       p {
-        font-size: 16px;
+        font-size: $f-16;
       }
     }
   }
@@ -226,19 +254,6 @@
       margin-bottom: 50px;
     }
   }
+  
 }
 
-.section_inspiration {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  .inspiration_room {
-    width: 95%;
-    min-height: 600px;
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
-  }
-}

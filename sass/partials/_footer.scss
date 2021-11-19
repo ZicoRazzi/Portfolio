@@ -16,12 +16,12 @@
 .fab{
   color:#fff;
   cursor: pointer;
-  font-size: 18px;
+  font-size: $f-18;
   display: inline-block;
 }
 .fab:hover{
   color:$icon;
-  font-size: 20px;
+  font-size: $f-20;
 }
 
 .fab {
@@ -31,23 +31,7 @@
   transform: rotate(360deg);
   
 }
-// .social_link {
-//   display: inline-block;
-// }
 
-// .social_link:hover {
-//   animation: rotate-icon .5s linear 3;
-//   -webkit-animation: rotate-icon .5s linear 3;
-// }
-
-// @keyframes rotate-icon {
-//   0% {
-//     transform: rotate(0);
-//   }
-//   100% {
-//     transform: rotate(-360deg);
-//   }
-// }
 @media (min-width: 768px) {
   .social_list{
     margin-left: 20px;

@@ -607,6 +607,43 @@ textarea:focus {
   top: 2px;
 }
 
+.section_inspiration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.section_inspiration .inspiration_room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  min-height: 600px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  -webkit-box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+          box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+}
+
+.section_inspiration .inspiration_title {
+  font-size: 12px;
+  color: orange;
+}
+
 @media (min-width: 768px) {
   .skills .skills_1 .skills_span,
   .skills .skills_2 .skills_span,
@@ -625,6 +662,9 @@ textarea:focus {
             flex: 1 0 33%;
     margin-bottom: 50px;
     margin-left: 20px;
+  }
+  .section_inspiration .inspiration_title {
+    font-size: 16px;
   }
 }
 
@@ -660,29 +700,6 @@ textarea:focus {
             flex: 1 0 25%;
     margin-bottom: 50px;
   }
-}
-
-.section_inspiration {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
-.section_inspiration .inspiration_room {
-  width: 95%;
-  min-height: 600px;
-  border-radius: 50px;
-  background: #e0e0e0;
-  -webkit-box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
-          box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
 }
 
 .footer_social {
