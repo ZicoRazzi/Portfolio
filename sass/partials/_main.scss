@@ -13,6 +13,7 @@
 .section_about {
   display: flex;
   flex-direction: column;
+  
 }
 .block_image {
   height: 40%;
@@ -83,7 +84,7 @@
     height: 20px;
     border-radius: 5px;
     margin-top: 20px;
-    color: rgb(8, 8, 8);
+    color: $main-txt;
     position: relative;
     span {
       font-size: 14px;
@@ -327,32 +328,10 @@
 }
 
 //Inspiration
-// .section_inspiration {
-//   h3 {
-//     text-align: center;
-//     margin-top: 60px;
-//   }
-// }
-// .section_inspiration_box {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-top: 50px;
-//   margin-bottom: 50px;
-
-//   .inspiration_room {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 95%;
-//     min-height: 600px;
-//     border-radius: 50px;
-//     background: #e0e0e0;
-//     box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
-//   }
-// }
 
 .section_inspiration {
+  display:flex;
+  justify-content: center;
   margin-top: 100px;
   margin-bottom: 50px;
 
@@ -380,12 +359,10 @@
   min-height: 200px;
 }
 .inspiration_button {
-  
   background-image: linear-gradient(top, #bebebe, #fff);
   border-radius: 50%;
   box-shadow: 4px 8px 10px 0px rgba(0, 0, 0, 0.3), inset 2px 4px 1px 1px white,
     inset 0px -3px 1px 1px #bebebe80;
-  
   height: 100px;
   position: relative;
   width: 100px;
@@ -446,15 +423,22 @@
   .section_projects {
     .project_box {
       flex: 1 0 35%;
-      margin: 0px 10px 20px 10px;
+      margin: 0px 20px 20px 20px;
     }
   }
 }
+.section_inspiration {  
+  
+  .inspiration_room {
+    width: 95%;
+  }
 
+}
 @media (min-width: 1024px) {
   .section_about {
     display: flex;
     flex-direction: row;
+    padding: 0px 20px;
   }
   .block_image {
     padding: 40px 0px;
@@ -479,8 +463,14 @@
       margin-bottom: 50px;
     }
   }
+  .section_inspiration {  
+  
+    .inspiration_room {
+      width: 90%;
+    }
   .inspiration_box {
     display: flex;
     flex: 1 0 25%;
   }
+}
 }
