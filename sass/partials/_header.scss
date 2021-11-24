@@ -64,13 +64,29 @@
     .logo_link {
       cursor: pointer;
       z-index: 99;
+      color: #fff;
+      text-shadow: 0 5px 20px #ffa500, 0 0 10px rgba(212, 230, 161, 0.8 / 89%),
+        0 0 20px #ffa500, 0 0 50px #ffa500, 5px 9px 5px rgba(0, 0, 0, 0.8 / 10%);
     }
     .logo_link:hover {
-      color: $hover;
+      animation: neon 1s ease infinite;
     }
+    
   }
 }
-
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 20px #d3c96e, 0 0 60px #d3c96e, 0 0 20px #d3c96e,
+      0 0 20px #d3c96e, 0 0 8px #fed128, 8px 8px 12px #ffa500;
+    color: #ffa500;
+  }
+  50% {
+    text-shadow: 0 5px 20px #ffa500, 0 0 10px rgb(212, 230, 161 / 89%),
+      0 0 20px #ffa500, 0 0 50px #ffa500, 5px 9px 5px rgb(0, 0, 0 / 10%);
+    color: #ffa500;
+  }
+}
 //header menu
 
 .menu_body {
@@ -84,7 +100,7 @@
   height: 16px;
   cursor: pointer;
   position: fixed;
-  top: 32px;
+  top: 35px;
   right: 30px;
 }
 .menu_icon span,
