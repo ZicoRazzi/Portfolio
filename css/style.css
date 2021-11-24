@@ -549,7 +549,7 @@ textarea:focus {
           box-shadow: 0 5px 20px #ffa500, 0 0 10px #d4e602, 0 0 20px #ffa500, 0 0 50px #ffa500, 5px 9px 5px black;
   width: 0px;
   height: 10px;
-  left: 65px;
+  left: 70px;
   top: 5px;
   border-radius: 5px;
 }
@@ -1005,6 +1005,18 @@ textarea:focus {
 .inspiration_span {
   font-size: 30px;
   color: orange;
+}
+
+@media (min-width: 360px) {
+  .progress_line_1,
+  .progress_line_2,
+  .progress_line_3,
+  .progress_line_4,
+  .progress_line_5,
+  .progress_line_6,
+  .progress_line_7 {
+    left: 80px;
+  }
 }
 
 @media (min-width: 480px) {
