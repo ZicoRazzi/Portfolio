@@ -457,7 +457,6 @@ textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0px;
 }
 
 .block_image .image {
@@ -466,6 +465,7 @@ textarea:focus {
   border-radius: 50%;
   background: url(/img/avatar_z.png) center no-repeat;
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 .about {
