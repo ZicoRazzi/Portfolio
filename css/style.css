@@ -630,16 +630,16 @@ textarea:focus {
     width: 0%;
   }
   25% {
-    width: 15%;
+    width: 12,5%;
   }
   50% {
-    width: 30%;
+    width: 25%;
   }
   75% {
-    width: 45%;
+    width: 37,5%;
   }
   100% {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -648,16 +648,16 @@ textarea:focus {
     width: 0%;
   }
   25% {
-    width: 15%;
+    width: 12,5%;
   }
   50% {
-    width: 30%;
+    width: 25%;
   }
   75% {
-    width: 45%;
+    width: 37,5%;
   }
   100% {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -1023,6 +1023,15 @@ textarea:focus {
 }
 
 @media (min-width: 480px) {
+  .section_about {
+    padding: 0px 20px;
+  }
+  .section_projects .project_box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 90%;
+            flex: 1 0 90%;
+    margin: 0px 20px 20px 20px;
+  }
   .skills_progress_box .progress_box {
     max-width: 500px;
   }
@@ -1052,16 +1061,19 @@ textarea:focus {
 }
 
 @media (min-width: 768px) {
+  .section_about {
+    padding: 0px 28px;
+  }
   .section_projects .project_box {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 35%;
             flex: 1 0 35%;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 27px 20px 27px;
   }
 }
 
 .section_inspiration .inspiration_room {
-  width: 95%;
+  width: 92%;
 }
 
 @keyframes progres_1 {
@@ -1126,16 +1138,16 @@ textarea:focus {
     font-size: 16px;
   }
   .section_projects {
-    padding: 0 50px;
+    padding: 0 30px;
   }
   .section_projects .project_box {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 25%;
             flex: 1 0 25%;
-    margin-bottom: 50px;
+    margin: 0px 22px 50px 22px;
   }
   .section_inspiration .inspiration_room {
-    width: 90%;
+    width: 93%;
   }
   .section_inspiration .inspiration_box {
     display: -webkit-box;
