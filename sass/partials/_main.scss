@@ -143,16 +143,16 @@
     width: 0%;
   }
   25% {
-    width: 17.5%;
+    width: 15%;
   }
   50% {
-    width: 35%;
+    width: 30%;
   }
   75% {
-    width: 47.5%;
+    width: 45%;
   }
   100% {
-    width: 70%;
+    width: 60%;
   }
 }
 @keyframes progres_2 {
@@ -160,16 +160,16 @@
     width: 0%;
   }
   25% {
-    width: 17.5%;
+    width: 15%;
   }
   50% {
-    width: 35%;
+    width: 30%;
   }
   75% {
-    width: 47.5%;
+    width: 45%;
   }
   100% {
-    width: 70%;
+    width: 60%;
   }
 }
 @keyframes progres_3 {
@@ -392,7 +392,18 @@
   color: orange;
 }
 @media (min-width: 360px) {
-  .progress_line_1,
+  .skills_progress_box {
+   
+    .progress_box {
+     
+      span {
+        
+        margin-left: 0;
+        
+      }
+    }
+  }
+.progress_line_1,
 .progress_line_2,
 .progress_line_3,
 .progress_line_4,
@@ -400,7 +411,7 @@
 .progress_line_6,
 .progress_line_7 {
   
-  left: 80px;
+  left: 85px;
 }
 }
 @media (min-width: 480px) {
@@ -446,6 +457,40 @@
     width: 95%;
   }
 
+}
+@keyframes progres_1 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 17,5%;
+  }
+  50% {
+    width: 35%;
+  }
+  75% {
+    width: 47,5%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progres_2 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 17,5%;
+  }
+  50% {
+    width: 35%;
+  }
+  75% {
+    width: 47,5%;
+  }
+  100% {
+    width: 70%;
+  }
 }
 @media (min-width: 1024px) {
   .section_about {
